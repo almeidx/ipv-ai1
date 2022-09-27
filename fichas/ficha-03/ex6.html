@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Almeida" />
+    <meta name="description" content="Exercício 6 da Ficha 2 de AI1" />
+    <title>Exercício 6 da Ficha 2</title>
+  </head>
+  <body>
+    <form>
+      <span>Dados de Contacto</span>
+      <fieldset>
+        <div>
+          <label for="name">Nome:</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="First & Last name"
+            pattern="[^\d]+"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="root@almeidx.dev"
+            required
+          />
+        </div>
+      </fieldset>
+
+      <div>
+        <label for="reason">Motivo de contacto:</label>
+        <select id="reason">
+          <option value="suggestion">Sugestão</option>
+          <option value="critic">Crítica</option>
+          <option value="information">Informação</option>
+          <option value="other">Outro</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="message">Mensagem:</label>
+        <br />
+        <textarea id="message" cols="10" rows="10"></textarea>
+      </div>
+
+      <div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </div>
+    </form>
+  </body>
+</html>
