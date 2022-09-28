@@ -2,7 +2,7 @@ name: Deploy static content to Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: true
 
 jobs:
@@ -19,14 +19,25 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
       - uses: actions/configure-pages@v2
+
+      - name: Create Directory Listing
+        run: node .github/generateDirectoryListing.mjs
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: './fichas'
+          path: ./fichas
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
