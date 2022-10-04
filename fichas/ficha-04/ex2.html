@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Almeida" />
+    <meta name="description" content="Exercício 2 da Ficha 4 de AI1" />
+    <title>Testes de Regex</title>
+  </head>
+
+  <body>
+    <form autocomplete="on" oninvalid="alert('aaa')">
+      <label for="text-only">Apenas texto:</label>
+      <input
+        id="text-only"
+        type="text"
+        pattern="[A-Za-z\s]*"
+        placeholder="Apenas Texto"
+        title="Texto"
+        required
+      />
+
+      <br />
+      <br />
+
+      <label for="number-only">Apenas números:</label>
+      <input
+        id="number-only"
+        type="text"
+        pattern="\d*"
+        placeholder="Apenas números"
+        title="Números"
+        required
+      />
+
+      <br />
+      <br />
+
+      <label for="lowercase-only">Apenas "a" a "z":</label>
+      <input
+        id="lowercase-only"
+        type="text"
+        pattern="[a-z\s]*"
+        placeholder="Apenas Minúsculas"
+        title="Minúsculas"
+        required
+      />
+
+      <br />
+      <br />
+
+      <label for="ipv-only">Apenas IPV:</label>
+      <input
+        id="ipv-only"
+        type="text"
+        pattern="[ipvIPV]*"
+        placeholder="Apenas ipv"
+        title="IPV"
+        required
+      />
+
+      <br />
+      <br />
+
+      <label for="reverse-ipv-only">Tudo menos IPV:</label>
+      <input
+        id="reverse-ipv-only"
+        type="text"
+        pattern="[^ipvIPV]*"
+        placeholder="Tudo menos ipv"
+        title="Não IPV"
+        required
+      />
+
+      <br />
+      <br />
+
+      <label for="15-chars">Sempre 15:</label>
+      <input
+        id="15-chars"
+        type="text"
+        pattern="[A-Z]{15}"
+        placeholder="15 caracteres Maiúsculos"
+        title="15 caracteres maiúsculos"
+        required
+      />
+
+      <br />
+      <br />
+
+      <label for="phone-number">Número de telemóvel:</label>
+      <input
+        id="phone-number"
+        type="text"
+        pattern="9[1236]\d(\s|-)\d{3}\1\d{3}"
+        placeholder="Telemóvel"
+        title="Telemóvel"
+        required
+      />
+
+      <br />
+      <br />
+
+      <button type="reset">Limpar</button>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

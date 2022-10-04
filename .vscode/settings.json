@@ -1,0 +1,5 @@
+{
+  "[html]": {
+    "javascript.autoClosingTags": false
+  }
+}
