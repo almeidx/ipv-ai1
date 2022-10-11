@@ -1,5 +1,6 @@
 {
   "[html]": {
-    "javascript.autoClosingTags": false
+    "javascript.autoClosingTags": false,
+    "editor.defaultFormatter": "vscode.html-language-features"
   }
 }
