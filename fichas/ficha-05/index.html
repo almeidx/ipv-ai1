@@ -8,10 +8,38 @@
 	<meta name="author" content="Almeida">
 	<meta name="description" content="Exercício 1 da Ficha 5 de AI1">
 	<title>Exercício 1 da Ficha 5</title>
+
+	<style>
+		dt {
+			font-weight: bold;
+		}
+
+		table {
+			border: 2px solid black;
+		}
+
+		td {
+			text-align: center;
+			border: 1px solid black;
+		}
+
+		.hour-col {
+			width: 60px;
+		}
+
+		.regular-col {
+			width: 100px;
+		}
+
+		#header-row {
+			background-color: #c0c0c0;
+		}
+
+	</style>
 </head>
 
 <body>
-	<h2>R. Almeida</h2>
+	<h1>R. Almeida</h1>
 
 	<img src="images/lenna.png" alt="Lenna test image" width="150" height="150">
 
@@ -43,33 +71,33 @@
 
 	<h2>Horário Escolar</h2>
 
-	<table border="2">
-		<tr bgcolor="#c0c0c0">
-			<td align="center" width="60">Horas</td>
+	<table>
+		<tr id="header-row">
+			<td class="hour-col">Horas</td>
 
-			<td align="center" width="100">Segunda</td>
-			<td align="center" width="100">Terça</td>
-			<td align="center" width="100">Quarta</td>
-			<td align="center" width="100">Quinta</td>
-			<td align="center" width="100">Sexta</td>
+			<td class="regular-col">Segunda</td>
+			<td class="regular-col">Terça</td>
+			<td class="regular-col">Quarta</td>
+			<td class="regular-col">Quinta</td>
+			<td class="regular-col">Sexta</td>
 		</tr>
 
 		<tr>
-			<td align="center">9:00</td>
+			<td>9:00</td>
 
-			<td rowspan="4" align="center">
+			<td rowspan="4">
 				<a href="https://moodle.estgv.ipv.pt/course/view.php?id=5665">U - P1</a>
 				<br>
 				<p>(L8 / RD)</p>
 			</td>
 
-			<td rowspan="4" align="center">
+			<td rowspan="4">
 				<a href="https://moodle.estgv.ipv.pt/course/view.php?id=5489">POO - P1</a>
 				<br>
 				<p>(L5 / CS)</p>
 			</td>
 
-			<td rowspan="6" align="center">
+			<td rowspan="6">
 				<a href="https://moodle.estgv.ipv.pt/course/view.php?id=5578">SO - P1</a>
 				<br>
 				<p>(LR1 / CQ)</p>
@@ -80,33 +108,33 @@
 		</tr>
 
 		<tr>
-			<td align="center">9:30</td>
+			<td>9:30</td>
 			<td></td>
 			<td></td>
 		</tr>
 
 		<tr>
-			<td align="center">10:00</td>
+			<td>10:00</td>
 			<td></td>
 			<td></td>
 		</tr>
 
 		<tr>
-			<td align="center">10:30</td>
+			<td>10:30</td>
 			<td></td>
 			<td></td>
 		</tr>
 
 		<tr>
-			<td align="center">11:00</td>
+			<td>11:00</td>
 
-			<td rowspan="4" align="center">
+			<td rowspan="4">
 				<a href="https://moodle.estgv.ipv.pt/course/view.php?id=5207">AS - TP1</a>
 				<br>
 				<p>(L8 / CW)</p>
 			</td>
 
-			<td rowspan="4" align="center">
+			<td rowspan="4">
 				<a href="https://moodle.estgv.ipv.pt/course/view.php?id=5486">AI1 - P1</a>
 				<br>
 				<p>(L5 / SA)</p>
@@ -117,15 +145,15 @@
 		</tr>
 
 		<tr>
-			<td align="center">11:30</td>
+			<td>11:30</td>
 			<td></td>
 			<td></td>
 		</tr>
 
 		<tr>
-			<td align="center">12:00</td>
+			<td>12:00</td>
 
-			<td rowspan="3" align="center">
+			<td rowspan="3">
 				<a href="https://moodle.estgv.ipv.pt/course/view.php?id=5578">SO - T</a>
 				<br>
 				<p>(A2 / CQ)</p>
@@ -136,22 +164,13 @@
 		</tr>
 
 		<tr>
-			<td align="center">12:30</td>
+			<td>12:30</td>
 			<td></td>
 			<td></td>
 		</tr>
 
 		<tr>
-			<td align="center">13:00</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-
-		<tr>
-			<td align="center">13:30</td>
-			<td></td>
+			<td>13:00</td>
 			<td></td>
 			<td></td>
 			<td></td>
@@ -159,9 +178,18 @@
 		</tr>
 
 		<tr>
-			<td align="center">14:00</td>
+			<td>13:30</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
 
-			<td rowspan="4" align="center">
+		<tr>
+			<td>14:00</td>
+
+			<td rowspan="4">
 				<a href="https://moodle.estgv.ipv.pt/course/view.php?id=5489">POO - TP1</a>
 				<br>
 				<p>(L3 / JM)</p>
@@ -170,7 +198,7 @@
 			<td></td>
 			<td></td>
 
-			<td rowspan="3" align="center">
+			<td rowspan="3">
 				<a href="https://moodle.estgv.ipv.pt/course/view.php?id=5207">AS - T</a>
 				<br>
 				<p>(A2 / CW)</p>
@@ -180,10 +208,10 @@
 		</tr>
 
 		<tr>
-			<td align="center">14:30</td>
+			<td>14:30</td>
 			<td></td>
 
-			<td rowspan="3" align="center">
+			<td rowspan="3">
 				<a href="https://moodle.estgv.ipv.pt/course/view.php?id=5486">AI1 - T</a>
 				<br>
 				<p>(A2 / SA)</p>
@@ -192,17 +220,17 @@
 			<td></td>
 		</tr>
 
-		<tr align="center">
+		<tr>
 			<td>15:00</td>
 			<td></td>
 			<td></td>
 		</tr>
 
 		<tr>
-			<td align="center">15:30</td>
+			<td>15:30</td>
 			<td></td>
 
-			<td rowspan="3" align="center">
+			<td rowspan="3">
 				<a href="https://moodle.estgv.ipv.pt/course/view.php?id=5665">U - T</a>
 				<br>
 				<p>(A2 / RD)</p>
@@ -212,9 +240,9 @@
 		</tr>
 
 		<tr>
-			<td align="center">16:00</td>
+			<td>16:00</td>
 
-			<td rowspan="4" align="center">
+			<td rowspan="4">
 				<a href="https://moodle.estgv.ipv.pt/course/view.php?id=5207">AS - P1</a>
 				<br>
 				<p>(L3 / CW)</p>
@@ -222,7 +250,7 @@
 
 			<td></td>
 
-			<td rowspan="4" align="center">
+			<td rowspan="4">
 				<a href="https://moodle.estgv.ipv.pt/course/view.php?id=5486">AI1 - P1</a>
 				<br>
 				<p>(L3 / SA)</p>
@@ -232,16 +260,16 @@
 		</tr>
 
 		<tr>
-			<td align="center">16:30</td>
+			<td>16:30</td>
 			<td></td>
 			<td></td>
 		</tr>
 
 		<tr>
-			<td align="center">17:00</td>
+			<td>17:00</td>
 			<td></td>
 
-			<td rowspan="3" align="center">
+			<td rowspan="3">
 				<a href="https://moodle.estgv.ipv.pt/course/view.php?id=5489">POO - T</a>
 				<br>
 				<p>(A2 / JM)</p>
@@ -251,13 +279,13 @@
 		</tr>
 
 		<tr>
-			<td align="center">17:30</td>
+			<td>17:30</td>
 			<td></td>
 			<td></td>
 		</tr>
 
 		<tr>
-			<td align="center">18:00</td>
+			<td>18:00</td>
 			<td></td>
 			<td></td>
 			<td></td>
@@ -265,7 +293,7 @@
 		</tr>
 
 		<tr>
-			<td align="center">18:30</td>
+			<td>18:30</td>
 			<td></td>
 			<td></td>
 			<td></td>
@@ -273,6 +301,25 @@
 			<td></td>
 		</tr>
 	</table>
+
+	<h3>Lista de definições</h3>
+
+	<dl>
+		<dt>AI1</dt>
+		<dd>Aplicações para a Internet 1</dd>
+
+		<dt>AS</dt>
+		<dd>Análise de Sistemas</dd>
+
+		<dt>POO</dt>
+		<dd>Programação Orientada a Objetos</dd>
+
+		<dt>SO</dt>
+		<dd>Sistemas Operativos</dd>
+
+		<dt>U</dt>
+		<dd>Usabilidade</dd>
+	</dl>
 
 	<a href="#">
 		<img src="images/up-arrow.png" width="20" height="20" alt="Ir para o topo da página">
