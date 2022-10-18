@@ -2,5 +2,6 @@
   "[html]": {
     "javascript.autoClosingTags": false,
     "editor.defaultFormatter": "vscode.html-language-features"
-  }
+  },
+  "cSpell.words": ["Parmenter"]
 }
