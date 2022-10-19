@@ -1,17 +1,20 @@
 body {
   min-height: 100vh;
-  background-color: #f4f4f7;
+  background-color: gray;
   background-image: url(img/sarah-parmenter.png);
   background-repeat: no-repeat;
-  background-size: 33%;
-  background-position: bottom 5px left 7px;
+  background-size: 33.33% 100%;
+  background-position: bottom left;
 }
 
 h1 {
-  color: gray;
+  font-size: 40px;
+  margin-left: 34%;
+  color: white;
 }
 
 p {
+  margin-left: 34%;
   font-family: Verdana, Arial;
   font-size: 1.5em;
 }
