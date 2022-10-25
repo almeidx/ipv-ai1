@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<meta name="description" content="Exercício 1 da Ficha 7 de AI1">
+	<title>Exercícios 1 da Ficha 7</title>
+</head>
+
+<body>
+	<div class="outer-header">
+		<header>
+			<h1>R. Almeida</h1>
+			<p>homepage</p>
+
+			<ul class="links">
+				<li><a href="#eu">Quem sou</a></li>
+				<li><a href="#contato">Contact-me</a></li>
+				<li><a href="#links">Links</a></li>
+			</ul>
+		</header>
+	</div>
+
+	<div class="outer-main">
+		<main>
+			<section class="user-info" id="eu">
+				<div>
+					<h2>Quem sou</h2>
+
+					<ul>
+						<li>
+							<span>Nome:</span>
+							<p>R. Almeida</p>
+						</li>
+
+						<li>
+							<span>Idade:</span>
+							<p>19 anos</p>
+						</li>
+
+						<li>
+							<span>Atividade:</span>
+							<p>estudante</p>
+						</li>
+
+						<li>
+							<span>Onde vivo:</span>
+							<p>Viseu</p>
+						</li>
+					</ul>
+				</div>
+
+				<img src="img/lenna.png" alt="Lenna">
+			</section>
+
+			<hr>
+
+			<section class="contact" id="contato">
+				<h2>Contact-me</h2>
+
+				<form autocomplete="on">
+					<fieldset class="fields">
+						<legend>A sua mensagem</legend>
+
+						<div>
+							<label for="name">Nome:</label>
+							<input type="text" id="name" required>
+						</div>
+
+						<div>
+							<label for="email">Email:</label>
+							<input type="email" id="email" required>
+						</div>
+
+						<div>
+							<label for="message">Mensagem:</label>
+							<textarea id="message" required></textarea>
+						</div>
+
+						<button type="submit">Enviar</button>
+					</fieldset>
+
+				</form>
+			</section>
+
+			<hr>
+
+			<section class="favourites" id="links">
+				<h2>Os meus links favoritos</h2>
+
+				<ul>
+					<li>A bola</li>
+					<li>Record</li>
+					<li>O jogo</li>
+				</ul>
+			</section>
+
+		</main>
+
+		<footer>
+			<ul>
+				<li><a href="#eu">Quem sou</a></li>
+				<li><a href="#contato">Contact-me</a></li>
+				<li><a href="#links">Links</a></li>
+			</ul>
+		</footer>
+	</div>
+
+</body>
+
+</html>
