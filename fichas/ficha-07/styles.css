@@ -16,6 +16,8 @@ body {
   place-items: center;
 
   border-bottom: 5px solid #2d6975;
+
+  height: 7.43rem;
 }
 
 header {
@@ -92,6 +94,9 @@ main {
   flex-direction: column;
 
   gap: 1rem;
+
+  /* height total - header - footer */
+  min-height: calc(100vh - 7.43rem - 5rem);
 }
 
 .user-info {
@@ -119,6 +124,7 @@ main {
 .user-info img {
   /* altura do container - padding - margin */
   height: calc(10rem - 0.5rem - 0.5rem);
+
   padding: 0.5rem;
   margin-top: 0.5rem;
 
@@ -131,16 +137,11 @@ main {
   padding-bottom: 1rem;
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-}
-
 hr {
   background-color: #2d6975;
   height: 0.2rem;
-  width: 105%;
-  margin-left: -2.5%;
+  width: calc(100% + 2rem);
+  margin-left: -1rem;
 }
 
 .fields {
@@ -192,13 +193,19 @@ hr {
   padding-left: 2rem;
 }
 
+.favourites ul li a {
+  color: black;
+  text-decoration: none;
+}
+
 footer {
   width: 100%;
   background-color: #919191;
 
-  padding-inline: calc(25% / 2);
-
+  padding-inline: max(calc(30% / 2), 1rem);
   padding-bottom: 2rem;
+
+  height: 5rem;
 }
 
 footer ul {
@@ -209,7 +216,6 @@ footer ul {
   list-style: none;
 
   padding-block: 0.7rem;
-  padding-inline: 1.8rem;
 }
 
 footer ul li:nth-child(1) {
