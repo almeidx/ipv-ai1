@@ -13,138 +13,159 @@
 	<title>Exercício 9 da Ficha 8</title>
 
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="gradient.css">
 
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<div class="container">
-		<header>
-			<h1>Ficha 9 - Introdução ao JavaScript</h1>
-		</header>
+	<div class="gradient"></div>
 
-		<main>
-			<section>
-				<h2>Exercício 1 - Estado</h2>
+	<div class="content">
+		<div class="container">
+			<header>
+				<h1>Ficha 9 - Introdução ao JavaScript</h1>
+			</header>
 
-				<p>
-					Crie uma página que contenha um botão. Cada vez que o utilizador clica no botão, deve
-					surgir um alerta que mostre o texto "verdadeiro" ou "falso", alternadamente. Clicando a primeira vez, o
-					alerta mostra "verdadeiro", clicando novamente, mostra "falso", clicando novamente, mostra novamente
-					"verdadeiro" e assim sucessivamente. O código JS deverá ficar armazenado num ficheiro externo de nome
-					"clicavel.js";
-				</p>
-			</section>
+			<main>
+				<section>
+					<h2>
+						<a href="ex1-2.html">Exercício 1</a>
+					</h2>
 
-			<section>
-				<h2>Exercício 2</h2>
+					<p>
+						Crie uma página que contenha um botão. Cada vez que o utilizador clica no botão, deve
+						surgir um alerta que mostre o texto "verdadeiro" ou "falso", alternadamente. Clicando a primeira vez, o
+						alerta mostra "verdadeiro", clicando novamente, mostra "falso", clicando novamente, mostra novamente
+						"verdadeiro" e assim sucessivamente. O código JS deverá ficar armazenado num ficheiro externo de nome
+						"clicavel.js";
+					</p>
+				</section>
 
-				<p>
-					Replique a página anterior e com o mesmo botão apresenta os dias da semana, ou seja,
-					clicando a primeira vez deverá aparecer “Domingo”, a segunda vez, “Segunda”, e assim sucessivamente.
-					Quando chegar ao final da semana deverá começar o processo do início. O exercício deverá ser elaborado
-					de duas formas diferentes, com recurso a:
+				<section>
+					<h2>
+						<a href="ex1-2.html">Exercício 2</a>
+					</h2>
 
-				<ol>
-					<li>Utilizar <code>if.. else..</code> (ou <code>if.. else if..</code>);</li>
+					<p>
+						Replique a página anterior e com o mesmo botão apresenta os dias da semana, ou seja,
+						clicando a primeira vez deverá aparecer “Domingo”, a segunda vez, “Segunda”, e assim sucessivamente.
+						Quando chegar ao final da semana deverá começar o processo do início. O exercício deverá ser elaborado
+						de duas formas diferentes, com recurso a:
 
-					<li>
-						Utilizar um array com os dias da semana:
+					<ol>
+						<li>Utilizar <code>if.. else..</code> (ou <code>if.. else if..</code>);</li>
 
-						<div class="code-container">
-							<code>let dia = 0;</code>
-							<code>const dias = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];</code>
-						</div>
-					</li>
-				</ol>
-				</p>
-			</section>
+						<li>
+							Utilizar um array com os dias da semana:
 
-			<section>
-				<h2>Exercício 3</h2>
+							<div class="code-container">
+								<code>let dia = 0;</code>
+								<code>const dias = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];</code>
+							</div>
+						</li>
+					</ol>
+					</p>
+				</section>
 
-				<p>
-					Crie um página onde constem 4 labels com o seguinte texto (
-					<span style="background-color: #f49e42;">#f49e42</span>,
-					<span style="background-color: #7e8477">#7e8477</span>,
-					<span style="background-color: #47a4ef">#47a4ef</span> e
-					<span style="background-color: #ad0c39">#ad0c39</span>)
-					e uma div vazia. Cada vez que o utilizador passar o rato por cima de uma label o
-					background da div deve ser preenchido com a cor da respetiva caixa de texto. Quando o rato não está sobre
-					nenhuma label, o background da div fica sem definição da cor de background. O código JS deverá ficar
-					armazenado num ficheiro externo de nome 'pintacores.js';
-				</p>
-			</section>
+				<section>
+					<h2>
+						<a href="ex3.html">Exercício 3</a>
+					</h2>
 
-			<section>
-				<h2>Exercício 4</h2>
+					<p>
+						Crie um página onde constem 4 labels com o seguinte texto (
+						<span style="background-color: #f49e42;">#f49e42</span>,
+						<span style="background-color: #7e8477">#7e8477</span>,
+						<span style="background-color: #47a4ef">#47a4ef</span> e
+						<span style="background-color: #ad0c39">#ad0c39</span>)
+						e uma div vazia. Cada vez que o utilizador passar o rato por cima de uma label o
+						background da div deve ser preenchido com a cor da respetiva caixa de texto. Quando o rato não está sobre
+						nenhuma label, o background da div fica sem definição da cor de background. O código JS deverá ficar
+						armazenado num ficheiro externo de nome 'pintacores.js';
+					</p>
+				</section>
 
-				<p>
-					Crie um página com base na figura seguinte. Através de JS deverá obter um número aleatório
-					entre 0 e 10. Quando o utilizador clica no botão, deverá surgir um alerta que diga se o utilizador acertou
-					no número correto. O input deverá ter o seguinte comportamento:
-				</p>
+				<section>
+					<h2>
+						<a href="ex4.html">Exercício 4</a>
+					</h2>
 
-				<ul>
-					<li>Quando o utilizador falha a tentativa, o input deverá ser limpo.</li>
-					<li>Quando o utilizador acerta a tentativa, o input deverá ficar disable.</li>
-				</ul>
+					<p>
+						Crie um página com base na figura seguinte. Através de JS deverá obter um número aleatório
+						entre 0 e 10. Quando o utilizador clica no botão, deverá surgir um alerta que diga se o utilizador acertou
+						no número correto. O input deverá ter o seguinte comportamento:
+					</p>
 
-				<img src="img/ex4.png" alt="Exemplo do resultado pretendido" width="250">
-			</section>
+					<ul>
+						<li>Quando o utilizador falha a tentativa, o input deverá ser limpo.</li>
+						<li>Quando o utilizador acerta a tentativa, o input deverá ficar disable.</li>
+					</ul>
 
-			<section>
-				<h2>Exercício 6</h2>
+					<img src="img/ex4.png" alt="Exemplo do resultado pretendido" width="250">
+				</section>
 
-				<p>Replique o exercício anterior e considere:</p>
+				<section>
+					<h2>
+						<a href="ex6.html">Exercício 6</a>
+					</h2>
 
-				<ul>
-					<li>Número aleatório entre 0 e 100.</li>
-					<li>O utilizador é avisado se o número colocado é inferior ou superior ao pretendido.</li>
-				</ul>
-			</section>
+					<p>Replique o exercício anterior e considere:</p>
 
-			<section>
-				<h2>Exercício 7</h2>
+					<ul>
+						<li>Número aleatório entre 0 e 100.</li>
+						<li>O utilizador é avisado se o número colocado é inferior ou superior ao pretendido.</li>
+					</ul>
+				</section>
 
-				<p>
-					Crie uma página que peça ao utilizador o preenchimento de dois valores. Ao clicar em cada
-					um dos botões terá que aparecer o resultado à frente do texto "O Resultado é: "
-				</p>
+				<section>
+					<h2>
+						<a href="ex7-8.html">Exercício 7</a>
+					</h2>
 
-				<img src="img/ex7.png" alt="Exemplo do resultado pretendido" width="250">
-			</section>
+					<p>
+						Crie uma página que peça ao utilizador o preenchimento de dois valores. Ao clicar em cada
+						um dos botões terá que aparecer o resultado à frente do texto "O Resultado é: "
+					</p>
 
-			<section>
-				<h2>Exercício 8</h2>
+					<img src="img/ex7.png" alt="Exemplo do resultado pretendido" width="250">
+				</section>
 
-				<p>Replique a página anterior:</p>
+				<section>
+					<h2>
+						<a href="ex7-8.html">Exercício 8</a>
+					</h2>
 
-				<ul>
-					<li>
-						Introduzir validação de campos do formulário utilizando regex.
+					<p>Replique a página anterior:</p>
 
-						<ul>
-							<li>Garanta que os dois campos são preenchidos</li>
-							<li>Garanta que no caso da divisão não poderá ser preenchido o valor 0</li>
-							<li>...</li>
-						</ul>
-					</li>
-				</ul>
-			</section>
+					<ul>
+						<li>
+							Introduzir validação de campos do formulário utilizando regex.
 
-			<section>
-				<h2>Exercício 9</h2>
+							<ul>
+								<li>Garanta que os dois campos são preenchidos</li>
+								<li>Garanta que no caso da divisão não poderá ser preenchido o valor 0</li>
+								<li>...</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
 
-				<p>
-					Após ter concluído todos os exercícios anteriores, crie uma nova página que disponibilize
-					links e descrições para cada um dos exercícios anteriores. A apresentação estética da página deverá ser
-					cuidada, recorrendo a estilização CSS e tipos de letra externos (Google Fonts, etc.). Fica ao seu critério a
-					definição do layout desta página. O código JS deverá ficar armazenado num ficheiro externo de nome
-					'fichajavascript.js'
-				</p>
-			</section>
-		</main>
+				<section>
+					<h2>
+						<a href="#">Exercício 9</a>
+					</h2>
+
+					<p>
+						Após ter concluído todos os exercícios anteriores, crie uma nova página que disponibilize
+						links e descrições para cada um dos exercícios anteriores. A apresentação estética da página deverá ser
+						cuidada, recorrendo a estilização CSS e tipos de letra externos (Google Fonts, etc.). Fica ao seu critério a
+						definição do layout desta página. O código JS deverá ficar armazenado num ficheiro externo de nome
+						'fichajavascript.js'
+					</p>
+				</section>
+			</main>
+		</div>
 	</div>
 
 	<script src="fichajavascript.js"></script>
