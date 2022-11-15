@@ -3,7 +3,13 @@
     "javascript.autoClosingTags": false,
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "cSpell.words": ["clicavel", "fichajavascript", "Parmenter", "pintacores"],
+  "cSpell.words": [
+    "clicavel",
+    "fichajavascript",
+    "lightgreen",
+    "Parmenter",
+    "pintacores"
+  ],
   "files.associations": {
     "*.css": "css"
   }
