@@ -50,7 +50,7 @@ main section h2 {
   margin-bottom: 0.25rem;
 }
 
-#answers li:hover:has(:not(:disabled)) {
+#answers li:hover {
   background-color: #eee;
 }
 

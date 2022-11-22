@@ -18,26 +18,131 @@
 	</header>
 
 	<main>
-		<section>
-			<h2>Questão</h2>
-			<p id="question-text"></p>
+		<section data-idx="0">
+			<h2>Questão 1</h2>
+			<p id="question-text">O que significa a sigla HTML?</p>
 
-			<form>
-				<ol id="answers" type="A">
-
-				</ol>
-
-				<div class="btn-container">
-					<button id="previous-btn" disabled>Anterior</button>
-					<button id="next-btn">Próxima</button>
-
-					<button type="submit" id="validar">Validar</button>
-					<p id="correct" style="display: none;">Tá certa!!!!</p>
-				</div>
-			</form>
+			<ol id="answers" type="A" data-correct="1">
+				<li>
+					<input type="radio" name="answer" id="answer-0-0">
+					<label for="answer-0-0">Hyperlinks and Text Markup Language</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="answer-0-1">
+					<label for="answer-0-1">HyperText Markup Language</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="answer-0-2">
+					<label for="answer-0-2">Home Tool Markup Language</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="answer-0-3">
+					<label for="answer-0-3">Hyper Text Makeup Language</label>
+				</li>
+			</ol>
 		</section>
-	</main>
 
+		<section data-idx="1">
+			<h2>Questão 2</h2>
+			<p id="question-text">Qual das alternativas abaixo não é um elemento de HTML?</p>
+
+			<ol id="answers" type="A" data-correct="2">
+				<li>
+					<input type="radio" name="answer" id="answer-1-0">
+					<label for="answer-1-0">div</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="answer-1-1">
+					<label for="answer-1-1">p</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="answer-1-2">
+					<label for="answer-1-2">ei</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="answer-1-3">
+					<label for="answer-1-3">span</label>
+				</li>
+			</ol>
+		</section>
+
+		<section data-idx="2">
+			<h2>Questão 3</h2>
+			<p id="question-text">Qual das alternativas abaixo não é um atributo válido para o elemento img?</p>
+
+			<ol id="answers" type="A" data-correct="3">
+				<li>
+					<input type="radio" name="answer" id="answer-2-0">
+					<label for="answer-2-0">src</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="answer-2-1">
+					<label for="answer-2-1">href</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="answer-2-2">
+					<label for="answer-2-2">alt</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="answer-2-3">
+					<label for="answer-2-3">title</label>
+				</li>
+			</ol>
+		</section>
+
+		<section data-idx="3">
+			<h2>Questão 4</h2>
+			<p id="question-text">O que significa a sigla CSS?</p>
+
+			<ol id="answers" type="A" data-correct="0">
+				<li>
+					<input type="radio" name="answer" id="answer-3-0">
+					<label for="answer-3-0">Cascading Style Sheets</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="answer-3-1">
+					<label for="answer-3-1">Counter-Strike: Source</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="answer-3-2">
+					<label for="answer-3-2">Catholic Social Services</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="answer-3-3">
+					<label for="answer-3-3">Cross Site Scripting</label>
+				</li>
+			</ol>
+		</section>
+
+		<section data-idx="4">
+			<h2>Questão 5</h2>
+			<p id="question-text">Quanto é 1 + 1?</p>
+
+			<ol id="answers" type="A" data-correct="1">
+				<li>
+					<input type="radio" name="answer" id="answer-4-0">
+					<label for="answer-4-0">1</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="answer-4-1">
+					<label for="answer-4-1">2</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="answer-4-2">
+					<label for="answer-4-2">3</label>
+				</li>
+				<li>
+					<input type="radio" name="answer" id="answer-4-3">
+					<label for="answer-4-3">473</label>
+				</li>
+			</ol>
+		</section>
+
+		<form class="btn-container">
+			<button type="submit" id="validar">Validar</button>
+			<p id="correct" style="display: none;">Tá certa!!!!</p>
+		</form>
+	</main>
 
 	<script src="jogo.js"></script>
 </body>
