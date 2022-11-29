@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Ficha 10" />
+	<title>Ficha 10</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+	<main>
+		<form>
+			<input id="first" type="number" placeholder="Primeiro" required />
+			<input id="op" type="text" placeholder="Operador" required />
+			<input id="second" type="number" placeholder="Segundo" required />
+
+			<button type="submit">Calcular</button>
+		</form>
+
+		<div class="result-ct">
+			<p id="result-container">O resultado da sua conta é =</p>
+			<span id="result"></span>
+		</div>
+
+		<label for="ops">Lista de operadores</label>
+		<ul id="ops">
+			<li>add</li>
+			<li>sub</li>
+			<li>mult</li>
+			<li>divide</li>
+		</ul>
+
+		<label for="items">Items</label>
+		<ul id="items"></ul>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

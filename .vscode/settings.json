@@ -9,7 +9,8 @@
     "lightgreen",
     "mult",
     "Parmenter",
-    "pintacores"
+    "pintacores",
+    "mult"
   ],
   "files.associations": {
     "*.css": "css"
