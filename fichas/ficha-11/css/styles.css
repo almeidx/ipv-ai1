@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 2rem;
+
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+  gap: 1rem;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  width: 20rem;
+
+  border-radius: 25px;
+}
+
+article p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
